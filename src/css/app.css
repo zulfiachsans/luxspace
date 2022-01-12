@@ -31,3 +31,24 @@
         background-size: 37.5%;
     }
 }
+
+@screen md {
+    .hero .hero-image,
+    .hero .hero-caption {
+        min-height: auto;
+    }
+    .hero .hero-cta {
+        @apply w-20 h-20 -translate-x-1/2 -translate-y-1/2;
+        background-size: auto;
+    }
+    .slider {
+        @apply flex-row;
+    }
+    .slider .thumbnail {
+        @apply w-auto order-first block overflow-visible pl-0;
+    }
+    .slider .preview {
+        height: 609px;
+        width: 560px;
+    }
+}
